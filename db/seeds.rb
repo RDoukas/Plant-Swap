@@ -3,5 +3,31 @@
 #
 # Examples:
 #
-  ads = Ad.create([{ title: "test", user_id: 1, description: 'test', image_url: 'test' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+# Ad 
+#   Ad.create([
+#     { title: "test", user_id: 1, description: 'test', image_url: 'test' },
+#   ])
+
+# # Categories 
+#   Category.create([
+#     { name: "Drop Off"},
+#     ])
+
+# Conversations
+  Conversation.create([ 
+    {sender_id: 1,
+    recepient_id: 2, 
+    ad_id: 1}
+  ])
+
+  # user 
+  # User.create([
+  #     {username: "test",
+  #     first_name: "test", 
+  #     last_name: "test",
+  #   password: "password",
+  # email: "test"}
+  #   ])
+
+  
+#  

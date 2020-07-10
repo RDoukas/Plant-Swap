@@ -9,5 +9,11 @@ Rails.application.routes.draw do
     get "/ads/:id" => "ads#show"
     patch "/ads/:id" => "ads#update"
     delete "/ads/:id" => "ads#destroy"
+
+    get "/categories" => "categories#index"
+
+    get "/conversations" => "conversations#index"
+    post "/conversations" => "conversations#create"
+    get "/conversations/:id" => "conversations#show"
   end
 end

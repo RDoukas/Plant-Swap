@@ -2,7 +2,7 @@ class Api::AdsController < ApplicationController
 
   def index 
     @ads = Ad.all
-    render json: { message: "it worked!"}
+    render "index.json.jb"
   end
 
   def create
@@ -13,13 +13,13 @@ class Api::AdsController < ApplicationController
       image_url: params[:image_url]
     )
     if @ad.save
-      render json: { message: "success!"}
+      render json: { message: "You're ad has been posted!"}
     end 
   end
 
   def show 
     @ad = Ad.find_by(id: params[:id])
-    render json: { message: "it worked!"}
+    render "show.json.jb"
   end 
 
   def update
@@ -29,13 +29,13 @@ class Api::AdsController < ApplicationController
     @ad.description = params[:description] || @ad.description
     @ad.image_url = params[:image_url] || @ad.image_url
     @ad.save
-    render json: { message: "it worked!" }
+    render json: { message: "Your ad has been updated!" }
   end 
 
   def destroy 
     ad = Ad.find_by(id: params[:id])
     ad.destroy
-    render json: {message: "Your ad has been deleted!"}
+    render json: {message: "Your ad has been removed."}
   end 
 
 end
