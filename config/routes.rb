@@ -15,5 +15,8 @@ Rails.application.routes.draw do
     get "/conversations" => "conversations#index"
     post "/conversations" => "conversations#create"
     get "/conversations/:id" => "conversations#show"
+
+    post "/users" => "users#create"
+    post "/sessions" => "sessions#create"
   end
 end
