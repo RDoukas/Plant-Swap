@@ -1,5 +1,5 @@
 class Api::MessagesController < ApplicationController
-  # before_action :authenticate_admin
+  
 
   def create
     message = Message.new(

@@ -1,5 +1,5 @@
 class Api::ConversationsController < ApplicationController
-  #before_action :authenticate_admin
+
 
   def index 
     @conversations = current_user.conversations 

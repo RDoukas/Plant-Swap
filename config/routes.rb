@@ -20,7 +20,7 @@ Rails.application.routes.draw do
 
     post "/users" => "users#create"
     post "/users/:ud" => "users#show"
-    post "/users" => "users#update"
+    patch "/users/:id" => "users#update"
     post "/users" => "users#destroy"
     post "/sessions" => "sessions#create"
   end
