@@ -12,13 +12,24 @@
 #   Category.create([
 #     { name: "Drop Off"},
 #     ])
+  # Category.create([
+  #   { name: "Tropical"},
+  #   { name: "Pick Up"},
+  #   { name: "Fern"},
+  #   { name: "Succulent"},
+  #   { name: "Easy Care"},
+  #   { name: "Medium Care"},
+
+  #   ])
 
 # Conversations
-  Conversation.create([ 
-    {sender_id: 1,
-    recepient_id: 2, 
-    ad_id: 1}
-  ])
+  # Conversation.create([ 
+  #   {sender_id: 1,
+  #   recepient_id: 2, 
+  #   ad_id: 1}
+  # ])
+
+
 
   # user 
   # User.create([
@@ -29,5 +40,7 @@
   # email: "test"}
   #   ])
 
+
+  
   
 #  

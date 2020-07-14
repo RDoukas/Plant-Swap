@@ -1,4 +1,5 @@
 class Api::AdsController < ApplicationController
+  # before_action :authenticate_admin, except: [:index, :show, :create]
 
   def index 
     @ads = Ad.all

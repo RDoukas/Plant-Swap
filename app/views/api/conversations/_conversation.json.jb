@@ -1,6 +1,6 @@
 {
   id: conversation.id,
   sender_id: conversation.sender_id,
-  recepient_id: conversation.recepient_id,
+  recipient_id: conversation.recipient_id,
   ad_id: conversation.ad_id,
 }

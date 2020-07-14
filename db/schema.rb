@@ -10,10 +10,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_07_10_200606) do
+ActiveRecord::Schema.define(version: 2020_07_14_185956) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "ad_categories", force: :cascade do |t|
+    t.integer "categories_id"
+    t.integer "ad_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
   create_table "ads", force: :cascade do |t|
     t.string "title"
@@ -32,8 +39,16 @@ ActiveRecord::Schema.define(version: 2020_07_10_200606) do
 
   create_table "conversations", force: :cascade do |t|
     t.integer "sender_id"
-    t.integer "recepient_id"
+    t.integer "recipient_id"
     t.integer "ad_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "messages", force: :cascade do |t|
+    t.text "body"
+    t.integer "user_id"
+    t.integer "conversation_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
