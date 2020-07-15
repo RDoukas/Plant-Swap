@@ -11,16 +11,30 @@
 # # Categories 
 #   Category.create([
 #     { name: "Drop Off"},
-#     ])
-  # Category.create([
-  #   { name: "Tropical"},
-  #   { name: "Pick Up"},
-  #   { name: "Fern"},
-  #   { name: "Succulent"},
-  #   { name: "Easy Care"},
-  #   { name: "Medium Care"},
+# #     ])
+#   Category.create([
+#     { name: "Tropical"},
+#     { name: "Pick Up"},
+#     { name: "Fern"},
+#     { name: "Succulent"},
+#     { name: "Easy Care"},
+#     { name: "Medium Care"},
 
-  #   ])
+#     ])
+    # Category.create([
+    # { name: "Purple"},
+    # { name: "Pink"},
+    # { name: "Grey"},
+    # { name: "Blue"},
+    # { name: "Green"},
+    # { name: "Yellow"},
+    # { name: "Orange"},
+    # { name: "Red"},
+    # { name: "Black"},
+    # { name: "White"},
+    # { name: "Beige"},
+
+    # ])
 
 # Conversations
   # Conversation.create([ 
@@ -33,11 +47,21 @@
 
   # user 
   # User.create([
-  #     {username: "test",
-  #     first_name: "test", 
-  #     last_name: "test",
+  #     {username: "SnowQueen",
+  #     first_name: "Suzy", 
+  #     last_name: "Snowflake",
   #   password: "password",
-  # email: "test"}
+  # email: "snowflake@gmail.com"},
+  #     {username: "Phil",
+  #     first_name: "Doukas", 
+  #     last_name: "BlackJack",
+  #   password: "password",
+  # email: "pgdoukas@gmail.com"},
+  #     {username: "ChanceChaser",
+  #     first_name: "John", 
+  #     last_name: "Chance",
+  #   password: "password",
+  # email: "chancechaser@gmail.com"},
   #   ])
 
 

@@ -29,7 +29,6 @@ class Api::AdsController < ApplicationController
 
     if @ad.user_id == current_user.id
       @ad.title = params[:title] || @ad.title
-      # @ad.user_id = params[:user_id] || @ad.user_id
       @ad.description = params[:description] || @ad.description
       @ad.image_url = params[:image_url] || @ad.image_url
 

@@ -19,7 +19,7 @@ Rails.application.routes.draw do
     post "/messages" => "messages#create"
 
     post "/users" => "users#create"
-    post "/users/:ud" => "users#show"
+    get "/users/:id" => "users#show"
     patch "/users/:id" => "users#update"
     post "/users" => "users#destroy"
     post "/sessions" => "sessions#create"
