@@ -24,5 +24,10 @@ class Api::ConversationsController < ApplicationController
     render "show.json.jb"
   end  
 
+  def destroy 
+    @conversation = Conversation.find_by(id: params[:id])
+    @conversation.destroy
+    render json: {message: "Your conversations has been removed."}
+  end 
 
 end
