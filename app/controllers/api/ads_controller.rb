@@ -3,7 +3,29 @@ class Api::AdsController < ApplicationController
 
   def index 
     @ads = Ad.all
-    render "index.json.jb"
+    if params[:category]
+      category = Category.find_by(name: params[:category])
+      @ads = category.ads
+    end
+    if params[:search]
+      @ads = @ads.where("name iLIKE ?", "%#{params[:search]}%")
+    end
+    if params[:sort] == "title"
+      if params[:sort_order] == "asc"
+        @ads = @ads.order(:title)
+      elsif params[:sort_order] == "desc"
+        @ads = @ads.order(title: :desc)
+      end
+    elsif params[:sort] == "category"
+      if params[:sort_order] == "asc"
+        @ads = @ads.order(:category)
+      elsif params[:sort_order] == "desc"
+        @ads = @ads.order(category: :desc)
+      end
+    else @ads = @ads.order(:id)
+    end
+    render 'index.json.jb'
+    
   end
 
   def show 
@@ -46,5 +68,6 @@ class Api::AdsController < ApplicationController
     @ad = Ad.find_by(id: params[:id])
     @ad.destroy
     render json: {message: "Your ad has been removed."}
+    redirect_to "/ads"
   end 
 end
