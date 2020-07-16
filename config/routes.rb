@@ -17,11 +17,10 @@ Rails.application.routes.draw do
     get "/conversations/:id" => "conversations#show"
 
     post "/messages" => "messages#create"
-
     post "/users" => "users#create"
     get "/users/:id" => "users#show"
     patch "/users/:id" => "users#update"
-    post "/users" => "users#destroy"
+    delete "/users/:id" => "users#destroy"
     post "/sessions" => "sessions#create"
   end
 end

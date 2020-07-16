@@ -20,6 +20,8 @@ class Api::AdsController < ApplicationController
     )
     if @ad.save
       render json: { message: "You're ad has been posted!"}
+    else 
+      render json: { errors: @ad.errors.full_messages}
     end 
   end
  
@@ -45,5 +47,4 @@ class Api::AdsController < ApplicationController
     @ad.destroy
     render json: {message: "Your ad has been removed."}
   end 
-
 end

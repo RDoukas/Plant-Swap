@@ -1,5 +1,5 @@
 class Api::UsersController < ApplicationController
-  before_action :authenticate_user, except: [:create]
+  before_action :authenticate_user
 
   def create
     user = User.new(
@@ -23,7 +23,6 @@ class Api::UsersController < ApplicationController
   end 
 
   def update
-  
     @user = User.find_by(id: current_user.id)
    
     @user.username = params[:username] || @user.username
@@ -32,12 +31,18 @@ class Api::UsersController < ApplicationController
     @user.email = params[:email] || @user.email
     @user.password = params[:password] || @user.password
     @user.password_confirmation = params[:password_confirmation] || @user.password_confirmation  
-
+    if @user.save
+      render json: {message: "Your profile has been updated"}
+    else 
+      render json: { errors: @user.errors.full_messages}
+    end
   end
 
-end
+  def destroy 
+    @user = User.find_by(id: current_user.id)
+    @user.destroy
+    render json: {message: "Your profile has been deleted."}
+  end 
+end 
 
     
- 
-
-

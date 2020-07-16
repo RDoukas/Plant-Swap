@@ -1,5 +1,5 @@
 class Api::MessagesController < ApplicationController
-  
+
 
   def create
     message = Message.new(

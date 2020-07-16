@@ -14,6 +14,8 @@ class Api::ConversationsController < ApplicationController
     )
     if @conversation.save
       render "show.json.jb"
+    else 
+      render json: { errors: @conversation.errors.full_messages}
     end 
   end
 
