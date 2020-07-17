@@ -62,6 +62,9 @@ Message.create!([
   {body: "How was your day", user_id: 2, conversation_id: 1},
   {body: "Hi, welcome to the plant swap! ", user_id: 2, conversation_id: 9}
 ])
+AdCategory.create!([
+  {category_id: 1, ad_id: 1}
+])
 Conversation.create!([
   {sender_id: 1, recipient_id: 2, ad_id: 1},
   {sender_id: 3, recipient_id: 1, ad_id: 1},
