@@ -1,5 +1,5 @@
 class AdCategory < ApplicationRecord
-  belongs_to :ads
+  belongs_to :ad
   belongs_to :categories
 
 end

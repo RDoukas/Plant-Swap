@@ -3,5 +3,8 @@
   user_id: ad.user_id,
   title: ad.title,
   description: ad.description,
-  image_url: ad.image_url
+  image_url: ad.image_url,
+  categories: ad.ad_categories,
+  created_at: ad.friendly_created_at
+
 }
