@@ -11,7 +11,8 @@ class Api::UsersController < ApplicationController
       password_confirmation: params[:password_confirmation]
     )
     if user.save
-      render json: { message: "User created successfully" }, status: :created
+      render "show.json.jb"
+      # render json: { message: "User created successfully" }, status: :created
     else
       render json: { errors: user.errors.full_messages }, status: :bad_request
     end
@@ -32,7 +33,7 @@ class Api::UsersController < ApplicationController
     @user.password = params[:password] || @user.password
     @user.password_confirmation = params[:password_confirmation] || @user.password_confirmation  
     if @user.save
-      render json: {message: "Your profile has been updated"}
+      render "show.json.jb"
     else 
       render json: { errors: @user.errors.full_messages}
     end
