@@ -18,6 +18,7 @@ Rails.application.routes.draw do
     delete "/conversations/:id" => "conversations#destroy"
 
     post "/messages" => "messages#create"
+    
     post "/users" => "users#create"
     get "/users/:id" => "users#show"
     patch "/users/:id" => "users#update"

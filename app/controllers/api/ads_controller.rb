@@ -42,7 +42,7 @@ class Api::AdsController < ApplicationController
       image_url: params[:image_url]
     )
     if @ad.save
-      render json: { message: "You're ad has been posted!"}
+      render "show.json.jb"
     else 
       render json: { errors: @ad.errors.full_messages}
     end 
@@ -58,7 +58,7 @@ class Api::AdsController < ApplicationController
       @ad.image_url = params[:image_url] || @ad.image_url
 
       if @ad.save
-        render json: { message: "Your ad has been updated!"}
+        render "show.json.jb"
       else 
         render json: { errors: @ad.errors.full_messages}, status: unprocessable_entity
       end 

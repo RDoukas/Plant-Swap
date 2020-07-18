@@ -4,7 +4,7 @@
   title: ad.title,
   description: ad.description,
   image_url: ad.image_url,
-  categories: ad.ad_categories,
+  categories: ad.categories,
   created_at: ad.friendly_created_at
 
 }
