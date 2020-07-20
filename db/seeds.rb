@@ -1,16 +1,29 @@
-
+User.create!([
+  {username: "SNix", password_digest: "$2a$12$xpYPaFTBsuX3o92vlrkaLuR7sXe5Tn3zxBl5BiHoQ7yswWi012UP.", first_name: "Steph", last_name: "Nixon", email: "snixon@gmail.com"},
+  {username: "amyers", password_digest: "$2a$12$g7Sof0sacZ58MgN8alKd..KvQGwV9QZ8Dl9eBPUw09fjwNDUbVHQ6", first_name: "Amy", last_name: "Myers", email: "amyers@gmail.com"},
+  {username: "becca", password_digest: "$2a$12$lQfiUYtc.0Mlh2l5QppS6ORYxJUwcxi7to.p1hfZo5zMcvFXuCuri", first_name: "Becca", last_name: "Doukas", email: "becca@gmail.com"},
+  {username: "carl", password_digest: "$2a$12$7slMsJmbzBauvPaGwIGh8OwamnkyD2PepPpyCqf7jOyDJSwzSAIGa", first_name: "Carl", last_name: "Hauck", email: "carl@gmail.com"},
+  {username: "SnowQueen", password_digest: "$2a$12$H2t6oV0Ce/V18uh1MsMFQ.0.T1UAvGJSizMDnLaw5zSIVxMPONYku", first_name: "Suzy", last_name: "Snowflake", email: "snowflake@gmail.com"},
+  {username: "Shark", password_digest: "$2a$12$yCBeFbrI3JkJ8CMbyibVz.RVkQYH1fyNRFEV23LTAfVmM6T65VzbO", first_name: "Sandy", last_name: "Shark", email: "shark@gmail.com"},
+  {username: "BobBuilder", password_digest: "$2a$12$YkaAJU1MVmjJ2z6W/nZRWueAAOrMFxtX3FXauF/1txs03HHQvfOl2", first_name: "Bob", last_name: "Builder", email: "builder@gmail.com"},
+  {username: "BobBuilder", password_digest: "$2a$12$ywn.XDkkE8PIWc2LLU5OfeD0U5fluQA.z/qMVQHj60U9Uu5ekrGra", first_name: "Bob", last_name: "Builder", email: "Bbuilder@gmail.com"},
+  {username: "BobBuilder", password_digest: "$2a$12$n23L9qUaebiA0MJDvvcnmu4UtcgOGd/zgaxEn8PUaI.eS4UZ8ZbLK", first_name: "Bob", last_name: "Builder", email: "BBuilder@gmail.com"},
+  {username: "BobBuilder", password_digest: "$2a$12$pSRE.k0q9Bdpx3MlZeqO8.x7Ln671/LXSCNcTp37BAQXt8GYdQEvO", first_name: "Bob", last_name: "Builder", email: "BBuild@gmail.com"},
+  {username: "BobTheBuilder", password_digest: "$2a$12$sgEwr/rjiwuBO3u1z1JdUO.aE4JdxypNPjb8it4saUgMPl0MMFhvy", first_name: "Doukas", last_name: "BlackJack", email: "pgdoukas@gmail.com"},
+  {username: "BobBuilder", password_digest: "$2a$12$tlM0xCZ.Dp9y/92aOw2JTefrD7l.Z9YutTvZpPRF8TZK1L0NTpblC", first_name: "Bobby", last_name: "Builder", email: "BobbyBuild@gmail.com"},
+  {username: "BobBuilder", password_digest: "$2a$12$0GqN1JiM2GX6NBRVoqfdtOKF/g/ZEw2WlYf/qKHAS1lBsGte6yNZK", first_name: "Bobby", last_name: "Builder", email: "BobbyBuilds@gmail.com"}
+])
 
 Ad.create!([
-  {title: "Maculata Vinca Vine", user_id: 4, description: "I have a periwinkle Maculata Vinca Vine I'd love to share! It grows like crazy!!!! ", image_url: "https://www.growjoyhttps://www.growjoy.com/store/pc/catalog/maculata_vinca_vine_plant_579_detail.jpg"},
-  {title: "Peachy Terra Cotta Pots", user_id: 6, description: "I have two 8 in peach terra cotta pots, they have holes in the bottom!  ", image_url: "https://secure.img1-fg.wfcdn.com/im/76144529/resize-h800%5Ecompr-r85/9105/91054465/Ceramic+Pot+Planter.jpg"},
   {title: "Pink Orchid", user_id: 1, description: "This orchid has brought me joy for years! I'll be moving within the month and would love to give her a loving home! ", image_url: "https://cdn1.1800flowers.com/wcsstore/Flowers/images/catalog/18436punx.jpg"},
   {title: "Boston Fern", user_id: 2, description: "I have a lovely Boston fern. They're super easy to take care of and are great hanging in corners of the room! My plant collection has grown too much (or not enough!) ", image_url: "https://images.homedepot-static.com/productImages/6d1529c0-c25f-4d24-9d6b-f2dedd59dd1f/svn/nearly-natural-artificial-plants-6051-s2-64_600.jpg"},
   {title: "Swiss Cheese Plant Propogation", user_id: 6, description: "I have a wonderful Swiss Cheese Plant (monstera deliciosa) that's outgrowing it's space. I've made a couple clippings for propogation and would love to share! ", image_url: "https://i.pinimg.com/originals/0a/01/bc/0a01bc71c5050005c98e5ae1dd9edbd5.jpg"},
   {title: "Burritto Succulent", user_id: 6, description: "I have a 10 in and a 6 in terra cotta pot with a grey blue glaze on them. No hole in the bottom ", image_url: "https://d3o372dlsg9lxo.cloudfront.net/catalog/products/e4198/images/enlarge/5cc9cfb59d988753beded0f9/E4198_Q2L1_19_C3_190104_075_v2_E4198.jpg"},
   {title: "Maculata Vinca Vines", user_id: 6, description: "I've had this bamboo plant for years! Unfortunately, I'm moving to California and can't bring it with me. ", image_url: "https://cdn.shopify.com/s/files/1/0022/5338/9887/products/bamboo_3_2000x.jpg?v=1536872233"},
-  {title: "Pretty Kitty Pot", user_id: 6, description: "Adorable planter with hand painted cat. 4 in ", image_url: "https://www.allendesignsstudio.com/wp-content/uploads/D1963-pretty-kitty-cat-planter.jpg"}
+  {title: "Pretty Kitty Pot", user_id: 6, description: "Adorable planter with hand painted cat. 4 in ", image_url: "https://www.allendesignsstudio.com/wp-content/uploads/D1963-pretty-kitty-cat-planter.jpg"},
+  {title: "Peachy Terra Cotta Pot", user_id: 6, description: "I have two 8 in peach terra cotta pots, they have holes in the bottom!  ", image_url: "https://secure.img1-fg.wfcdn.com/im/76144529/resize-h800%5Ecompr-r85/9105/91054465/Ceramic+Pot+Planter.jpg"},
+  {title: "Cactus", user_id: 2, description: "I have a great cactus! ", image_url: "https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1568042845-Cactus_mix_yellow_2048x.jpg?crop=0.838xw:0.838xh;0.0705xw,0.122xh&resize=480%3A%2A"},
 ])
-
 Category.create!([
   {name: "Drop Off"},
   {name: "Purple"},
@@ -86,34 +99,15 @@ AdCategory.create!([
   {category_id: 14, ad_id: 7},
   {category_id: 21, ad_id: 7},
   {category_id: 17, ad_id: 7},
-  {category_id: 14, ad_id: 8},
-  {category_id: 3, ad_id: 8},
-  {category_id: 27, ad_id: 8}
 ])
 
 Conversation.create!([
   {sender_id: 1, recipient_id: 2, ad_id: 1},
-  {sender_id: 3, recipient_id: 1, ad_id: 1},
-  {sender_id: 1, recipient_id: 3, ad_id: 1},
-  {sender_id: 1, recipient_id: 2, ad_id: 1},
-  {sender_id: 3, recipient_id: 1, ad_id: 1},
-  {sender_id: 1, recipient_id: 3, ad_id: 1},
-  {sender_id: 4, recipient_id: 3, ad_id: 1},
-  {sender_id: 6, recipient_id: 3, ad_id: 1},
-  {sender_id: 1, recipient_id: 2, ad_id: 1},
-  {sender_id: 3, recipient_id: 1, ad_id: 1},
-  {sender_id: 1, recipient_id: 3, ad_id: 1},
-  {sender_id: 1, recipient_id: 2, ad_id: 1},
-  {sender_id: 3, recipient_id: 1, ad_id: 1},
-  {sender_id: 1, recipient_id: 3, ad_id: 1},
-  {sender_id: 4, recipient_id: 3, ad_id: 1},
-  {sender_id: 6, recipient_id: 3, ad_id: 1},
-  {sender_id: 6, recipient_id: 3, ad_id: 2},
-  {sender_id: 6, recipient_id: 2, ad_id: 4}
 ])
 Message.create!([
   {body: "hello!", user_id: 1, conversation_id: 1},
-  {body: "What's up dude?", user_id: 2, conversation_id: 1},
-  {body: "Anything you like?", user_id: 3, conversation_id: 10},
-  {body: "Hi! I love your gorgeous fern! How big is it?", user_id: 2, conversation_id: 18}
+  {body: "Hi! Is your plant still available?", user_id: 2, conversation_id: 1},
+  {body: "Yes it is, are you free to pick it up this week?", user_id: 1, conversation_id: 1},
+  {body: "I am on Tuesday!", user_id: 2, conversation_id: 1},
+  {body: "Great! See you then!", user_id: 2, conversation_id: 1},
 ])

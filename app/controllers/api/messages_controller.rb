@@ -8,7 +8,7 @@ class Api::MessagesController < ApplicationController
       conversation_id: params[:conversation_id]
     )
     if @message.save
-      render "show.json.jb", status: :created
+      render "show.json.jb"
     else
       render json: { errors: @message.errors.full_messages }, status: :bad_request
     end

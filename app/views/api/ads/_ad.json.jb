@@ -5,6 +5,6 @@
   description: ad.description,
   image_url: ad.image_url,
   categories: ad.categories,
-  created_at: ad.friendly_created_at
+  created_at: ad.friendly_created_at, 
 
 }
