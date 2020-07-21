@@ -39,6 +39,7 @@ class Api::UsersController < ApplicationController
     else 
       render json: { errors: @user.errors.full_messages}
     end
+    
   end
 
   def destroy 

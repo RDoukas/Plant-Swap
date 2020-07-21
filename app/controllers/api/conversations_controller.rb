@@ -22,7 +22,7 @@ class Api::ConversationsController < ApplicationController
   def show
     @conversation = Conversation.find_by(id: params[:id])
     if @conversation.sender_id  == current_user.id || @conversation.recipient_id == current_user.id
-    render "show.json.jb"
+      render "show.json.jb"
     else 
       render json: { message: "You may not view this"}
     end 

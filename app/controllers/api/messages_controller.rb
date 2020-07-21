@@ -4,7 +4,7 @@ class Api::MessagesController < ApplicationController
   def create
     @message = Message.new(
       body: params[:body],
-      user_id: params[:user_id],
+      user_id: current_user.id,
       conversation_id: params[:conversation_id]
     )
     if @message.save
