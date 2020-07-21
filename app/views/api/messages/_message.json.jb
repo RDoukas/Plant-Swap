@@ -4,6 +4,5 @@
   sent: message.friendly_created_at,
   user_id: message.user_id,
   username: message.user.username,
-  message: "Your message has been sent!!"
 
 }
