@@ -26,8 +26,14 @@ class Api::ConversationsController < ApplicationController
 
   def destroy 
     @conversation = Conversation.find_by(id: params[:id])
-    @conversation.destroy
-    render json: {message: "Your conversations has been removed."}
+    if @conversation.sender_id  == current_user.id || @conversation.recipient_id == current_user.id
+      @conversation.destroy
+      render json: {message: "Your conversations has been removed."}
+
+    else 
+      render json: {message: "You are unable to delete this convo."}
+    end
+
   end 
 
 end

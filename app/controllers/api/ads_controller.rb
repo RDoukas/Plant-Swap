@@ -39,11 +39,10 @@ class Api::AdsController < ApplicationController
       title: params[:title],
       user_id: current_user.id,
       description: params[:description],
-      image_url: params[:image_url]
+      image_url: params[:image_url],
     )
     if @ad.save
-
-      render json: "show.json.jb"
+      render "show.json.jb"
     else 
       render json: {errors: @ad.errors.full_messages}, status: :unprocessable_entity
     end 
@@ -57,19 +56,25 @@ class Api::AdsController < ApplicationController
       @ad.title = params[:title] || @ad.title
       @ad.description = params[:description] || @ad.description
       @ad.image_url = params[:image_url] || @ad.image_url
+    
 
       if @ad.save
         render "show.json.jb" 
       else 
         render json: { errors: @ad.errors.full_messages}, status: unprocessable_entity
       end 
+    else   
+      render json: {message: "You are unable to update this ad."}
     end
   end 
 
   def destroy 
     @ad = Ad.find_by(id: params[:id])
-    @ad.destroy
-    render json: {message: "Your ad has been removed."}
-    redirect_to "/ads"
+    if @ad.user_id  == current_user.id
+      @ad.destroy
+      render json: {message: "Your ad has been removed."}
+    else 
+      render json: {message: "You are unable to delete this ad."}
+    end
   end 
 end

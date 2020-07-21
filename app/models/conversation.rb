@@ -4,5 +4,7 @@ class Conversation < ApplicationRecord
   belongs_to :recipient, class_name: "User"
   belongs_to :ad
   has_many :messages
+
+  
   
 end
