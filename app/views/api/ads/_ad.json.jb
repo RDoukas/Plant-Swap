@@ -1,6 +1,6 @@
 {
   id: ad.id,
-  user_id: ad.user_id,
+  user_id: ad.friendly_user,
   title: ad.title,
   description: ad.description,
   image_url: ad.image_url,

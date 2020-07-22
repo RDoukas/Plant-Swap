@@ -12,4 +12,13 @@ class Ad < ApplicationRecord
     created_at.strftime("%b %e, %Y")
   end
 
+ 
+  def friendly_user 
+    return user.username
+    
+  end
+
+ 
+  
+
 end
