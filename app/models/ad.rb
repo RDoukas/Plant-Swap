@@ -6,6 +6,7 @@ class Ad < ApplicationRecord
 
   validates :title, presence: true
   validates :description, presence: true, uniqueness: true
+  validates :image_url, presence: true
 
 
   def friendly_created_at
