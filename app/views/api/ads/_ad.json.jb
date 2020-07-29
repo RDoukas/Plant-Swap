@@ -1,6 +1,7 @@
 {
   id: ad.id,
-  user_id: ad.user.username,
+  username: ad.user.username,
+  user_id: ad.user_id,
   title: ad.title,
   description: ad.description,
   image_url: ad.image_url,

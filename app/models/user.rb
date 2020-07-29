@@ -6,10 +6,10 @@ class User < ApplicationRecord
     Conversation.where("sender_id = ? OR recipient_id = ?", id, id)
   end
 
-  def friendly_user 
-    @user = User.find_by(id: [:user_id])
+  # def friendly_user 
+  #   @user = User.find_by(id: [:user_id])
     
-  end
+  # end
 
   #maybe necessary, maybe not
   # has_many :messages

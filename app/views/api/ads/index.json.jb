@@ -2,4 +2,3 @@
   ad = render partial: "ad.json.jb", locals: {ad: ad} 
 
 end 
-
