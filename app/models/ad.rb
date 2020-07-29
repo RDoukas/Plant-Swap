@@ -13,13 +13,8 @@ class Ad < ApplicationRecord
     created_at.strftime("%b %e, %Y")
   end
 
- 
-  def friendly_user 
-    return user.username
-    
+  def category_names
+    categories.map { |category| category.name }
   end
-
- 
-  
 
 end
