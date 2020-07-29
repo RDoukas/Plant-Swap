@@ -3,28 +3,6 @@ class Api::AdsController < ApplicationController
 
   def index 
     @ads = Ad.all
-    # if params[:category]
-    #   category = Category.find_by(name: params[:category])
-    #   @ads = category.ads
-    # end
-    # if params[:search]
-    #   @ads = @ads.where("title iLIKE ?", "%#{params[:search]}%")
-    # end
-    # if params[:sort] == "title"
-    #   if params[:sort_order] == "asc"
-    #     @ads = @ads.order(:title)
-    #   elsif params[:sort_order] == "desc"
-    #     @ads = @ads.order(title: :desc)
-    #   end
-    # elsif params[:sort] == "category"
-    #   if params[:sort_order] == "asc"
-    #     @ads = @ads.order(:category)
-    #   elsif params[:sort_order] == "desc"
-    #     @ads = @ads.order(category: :desc)
-    #   end
-    # else 
-    #   @ads = @ads.order(:created_at)
-    # end
     render 'index.json.jb'
     
   end

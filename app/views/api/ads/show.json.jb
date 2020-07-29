@@ -10,6 +10,4 @@ if current_user
   ad[:owner] = (@ad.user_id == current_user.id)
 end
 
-
-
 ad
