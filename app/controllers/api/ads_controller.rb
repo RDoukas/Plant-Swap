@@ -37,14 +37,21 @@ class Api::AdsController < ApplicationController
  
 
   def update
-    response = Cloudinary::Uploader.upload(params[:image_url])
-    cloudinary_url = response["secure_url"]
+   
+
+    
+    
     @ad = Ad.find_by(id: params[:id])
 
     if @ad.user_id == current_user.id
       @ad.title = params[:title] || @ad.title
       @ad.description = params[:description] || @ad.description
-      @ad.image_url = eval(params[:image_url]) || @ad.image_url
+
+      # if conditional for if there's an image. 
+        response = Cloudinary::Uploader.upload(params[:image_url])
+        cloudinary_url = response["secure_url"]
+        @ad.image_url = cloudinary_url || @ad.image_url
+      # end 
     
 
       if @ad.save
