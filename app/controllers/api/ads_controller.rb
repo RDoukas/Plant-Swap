@@ -19,7 +19,6 @@ class Api::AdsController < ApplicationController
       title: params[:title],
       user_id: current_user.id,
       description: params[:description],
-      # image_url: params[:image_url],
       image_url: cloudinary_url
     )
 
@@ -32,18 +31,20 @@ class Api::AdsController < ApplicationController
       end 
       render "show.json.jb"
     else
-      render json: { errors: @ad.errors.full_messages }, status: :unprocessable_entity
+      render json: {errors: @ads.errors.full_messages}, status: 422
     end
   end
  
 
   def update
+    response = Cloudinary::Uploader.upload(params[:image_url])
+    cloudinary_url = response["secure_url"]
     @ad = Ad.find_by(id: params[:id])
 
     if @ad.user_id == current_user.id
       @ad.title = params[:title] || @ad.title
       @ad.description = params[:description] || @ad.description
-      @ad.image_url = params[:image_url] || @ad.image_url
+      @ad.image_url = eval(params[:image_url]) || @ad.image_url
     
 
       if @ad.save
@@ -54,10 +55,9 @@ class Api::AdsController < ApplicationController
             category_id: category_id
           )
         end
-        
         render "show.json.jb" 
       else 
-        render json: { errors: @ad.errors.full_messages}, status: unprocessable_entity
+        render json: {errors: @ads.errors.full_messages}, status: 422
       end 
     end 
   end 
