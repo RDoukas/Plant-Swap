@@ -13,6 +13,11 @@ class Api::ConversationsController < ApplicationController
       ad_id: params[:ad_id]
     )
     if @conversation.save
+      message = Message.create(
+        body: params[:message],
+        user_id: current_user.id,
+        conversation_id: @conversation.id
+      )
       render "show.json.jb"
     else 
       render json: { errors: @conversation.errors.full_messages}
