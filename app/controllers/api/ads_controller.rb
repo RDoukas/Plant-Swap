@@ -37,9 +37,6 @@ class Api::AdsController < ApplicationController
  
 
   def update
-   
-
-    
     
     @ad = Ad.find_by(id: params[:id])
 
