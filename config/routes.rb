@@ -25,5 +25,6 @@ Rails.application.routes.draw do
     patch "/users/:id" => "users#update"
     delete "/users/:id" => "users#destroy"
     post "/sessions" => "sessions#create"
+    get "/*path" => proc { [200, {}, [ActionView::Base.new.render(file: 'public/index.html')]] }
   end
 end
