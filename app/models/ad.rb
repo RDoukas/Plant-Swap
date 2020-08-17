@@ -5,7 +5,8 @@ class Ad < ApplicationRecord
   has_many :categories, through: :ad_categories
 
   validates :title, presence: true
-  validates :description, presence: true, uniqueness: true
+  validates :description, presence: true 
+  # uniqueness: true
   validates :image_url, presence: true
 
 
