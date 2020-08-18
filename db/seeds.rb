@@ -1,13 +1,13 @@
 
-User.create!([
-  {username: "SNix", password_digest: "$2a$12$ezYomPVL7ygDDaWVeJXgrezxyN.d3dONALp/MpY51BsrUekHXy6hG", first_name: "Steph", last_name: "Nixon", email: "snixon@gmail.com"},
-  {username: "amyers", password_digest: "$2a$12$3vAJwyJCUL1eEeNsYGhimex2S2UJAAbvnBXLKWxrW4gy5pbP6mtJq", first_name: "Amy", last_name: "Myers", email: "amyers@gmail.com"},
-  {username: "carl", password_digest: "$2a$12$mbB2qTlairNFv1nHavPwae6VE68XI08GTiZ5r./QOdjoX82TUko76", first_name: "Carl", last_name: "Hauck", email: "carl@gmail.com"},
-  {username: "JakeSnake", password_digest: "$2a$12$jVRut4Zp.wTZKzRlp408/.kRWAn92dVIH8YY9yJdR3PUk/aU9djEq", first_name: "Jacob", last_name: "Doukas", email: "JakeSnake@gmail.com"},
-  {username: "Betty", password_digest: "$2a$12$M9Bf4gySRSi1vRtsyfDopuLwqg.Lfe8Ij5lDUI.ZW0eXPWUQKQIM2", first_name: "Betty", last_name: "Doukas", email: "Betty@gmail.com"},
-  {username: "alex", password_digest: "$2a$12$a13WO.jlr7zPrmWofrV6HeIh5RwBOaeVQDOl0a8Sc.Ms7ZCSALqaK", first_name: "Alex", last_name: "Rosales", email: "alex@gmail.com"},
-  {username: "beccabagels", password_digest: "$2a$12$oKVZ4jlk3Gko8hfdpE/.CuWtnaqhNVWawkZmaD8lUYiZFnJCV9vnG", first_name: "Becca", last_name: "Doukas", email: "becca@gmail.com"}
-])
+# User.create!([
+#   {username: "SNix", password_digest: "$2a$12$ezYomPVL7ygDDaWVeJXgrezxyN.d3dONALp/MpY51BsrUekHXy6hG", first_name: "Steph", last_name: "Nixon", email: "snixon@gmail.com"},
+#   {username: "amyers", password_digest: "$2a$12$3vAJwyJCUL1eEeNsYGhimex2S2UJAAbvnBXLKWxrW4gy5pbP6mtJq", first_name: "Amy", last_name: "Myers", email: "amyers@gmail.com"},
+#   {username: "carl", password_digest: "$2a$12$mbB2qTlairNFv1nHavPwae6VE68XI08GTiZ5r./QOdjoX82TUko76", first_name: "Carl", last_name: "Hauck", email: "carl@gmail.com"},
+#   {username: "JakeSnake", password_digest: "$2a$12$jVRut4Zp.wTZKzRlp408/.kRWAn92dVIH8YY9yJdR3PUk/aU9djEq", first_name: "Jacob", last_name: "Doukas", email: "JakeSnake@gmail.com"},
+#   {username: "Betty", password_digest: "$2a$12$M9Bf4gySRSi1vRtsyfDopuLwqg.Lfe8Ij5lDUI.ZW0eXPWUQKQIM2", first_name: "Betty", last_name: "Doukas", email: "Betty@gmail.com"},
+#   {username: "alex", password_digest: "$2a$12$a13WO.jlr7zPrmWofrV6HeIh5RwBOaeVQDOl0a8Sc.Ms7ZCSALqaK", first_name: "Alex", last_name: "Rosales", email: "alex@gmail.com"},
+#   {username: "beccabagels", password_digest: "$2a$12$oKVZ4jlk3Gko8hfdpE/.CuWtnaqhNVWawkZmaD8lUYiZFnJCV9vnG", first_name: "Becca", last_name: "Doukas", email: "becca@gmail.com"}
+# ])
 
 Ad.create!([
   {title: "Burritto Succulent", user_id: 5, description: " I have an adorable burrito succulent potted in a 3 inch ceramic pot. These guys grow like crazy and will trail over the pot. They're great to hang!  Let me know if you have any questions. ", image_url: "https://res.cloudinary.com/dzx2kuqwt/image/upload/v1596668993/f3xcsqxwtjndawz4qowb.jpg"},
