@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* 
 Template Name: Bold - Multipurpose Html5 Template
-Template URI: http://www.eonythemes.com
+Template URI: https://www.eonythemes.com
 Description: Multipurpose, premium, bootstrap based html5 template
 Author: Eon
 
@@ -6721,7 +6721,7 @@ Animations - add these clases to the parent element - Navbar Or dropdown
 }
 
 .services-section-edge::after {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='150' width='2800' fill='rgb(215,220,222)' fill-opacity='1'%3E%3Cpolygon points='0,150 2800,150 0,0'%3E%3C/polygon%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='https://www.w3.org/2000/svg' height='150' width='2800' fill='rgb(215,220,222)' fill-opacity='1'%3E%3Cpolygon points='0,150 2800,150 0,0'%3E%3C/polygon%3E%3C/svg%3E");
   background-position: center center;
   background-repeat: no-repeat;
   content: '';
@@ -6740,7 +6740,7 @@ Animations - add these clases to the parent element - Navbar Or dropdown
 }
 
 .about-section-edge::after {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='150' width='2800' fill='rgb(232,235,236)' fill-opacity='1'%3E%3Cpolygon points='0,150 2800,150 2800,0'%3E%3C/polygon%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='https://www.w3.org/2000/svg' height='150' width='2800' fill='rgb(232,235,236)' fill-opacity='1'%3E%3Cpolygon points='0,150 2800,150 2800,0'%3E%3C/polygon%3E%3C/svg%3E");
   background-position: center center;
   background-repeat: no-repeat;
   content: '';
@@ -6759,7 +6759,7 @@ Animations - add these clases to the parent element - Navbar Or dropdown
 }
 
 .portfolio-section-edge::after {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='150' width='2800' fill='rgb(215,220,222)' fill-opacity='1'%3E%3Cpolygon points='0,150 2800,150 0,0'%3E%3C/polygon%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='https://www.w3.org/2000/svg' height='150' width='2800' fill='rgb(215,220,222)' fill-opacity='1'%3E%3Cpolygon points='0,150 2800,150 0,0'%3E%3C/polygon%3E%3C/svg%3E");
   background-position: center center;
   background-repeat: no-repeat;
   content: '';
@@ -6778,7 +6778,7 @@ Animations - add these clases to the parent element - Navbar Or dropdown
 }
 
 .testimonials-section-edge::after {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='150' width='2800' fill='rgb(232,235,236)' fill-opacity='1'%3E%3Cpolygon points='0,150 2800,150 2800,0'%3E%3C/polygon%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='https://www.w3.org/2000/svg' height='150' width='2800' fill='rgb(232,235,236)' fill-opacity='1'%3E%3Cpolygon points='0,150 2800,150 2800,0'%3E%3C/polygon%3E%3C/svg%3E");
   background-position: center center;
   background-repeat: no-repeat;
   content: '';
@@ -6797,7 +6797,7 @@ Animations - add these clases to the parent element - Navbar Or dropdown
 }
 
 .news-section-edge::after {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='150' width='2800' fill='rgb(24,24,24)' fill-opacity='1'%3E%3Cpolygon points='0,150 2800,150 2800,0'%3E%3C/polygon%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='https://www.w3.org/2000/svg' height='150' width='2800' fill='rgb(24,24,24)' fill-opacity='1'%3E%3Cpolygon points='0,150 2800,150 2800,0'%3E%3C/polygon%3E%3C/svg%3E");
   background-position: center center;
   background-repeat: no-repeat;
   content: '';
@@ -12176,11 +12176,11 @@ Animations - add these clases to the parent element - Navbar Or dropdown
  * Swiper 3.3.1
  * Most modern mobile touch slider and framework with hardware accelerated transitions
  * 
- * http://www.idangero.us/swiper/
+ * https://www.idangero.us/swiper/
  * 
  * Copyright 2016, Vladimir Kharlampidi
  * The iDangero.us
- * http://www.idangero.us/
+ * https://www.idangero.us/
  * 
  * Licensed under MIT
  * 
