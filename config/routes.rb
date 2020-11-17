@@ -29,7 +29,5 @@ Rails.application.routes.draw do
     
   end
 
-  # get "/*path" => proc { [200, {}, [ActionView::Base.new.render(file: 'public/index.html')]] } 
-
   
 end
